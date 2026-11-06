@@ -1,0 +1,19 @@
+.app { max-width: 780px; margin: 0 auto; padding: 56px 24px; }
+h1 { margin-bottom: 12px; font-size: clamp(28px, 5vw, 36px); }
+.intro { color: #647089; line-height: 1.6; }
+.theme-controls { display: flex; align-items: center; justify-content: space-between; gap: 20px; margin: 32px 0 20px; }
+.theme-controls p { font-size: 14px; color: #647089; }
+.theme-controls button { padding: 12px 18px; border: 0; border-radius: 8px; color: #fff; background: #4665b8; }
+.theme-controls button:hover { background: #36529d; }
+.themed-card { padding: 32px; border: 1px solid; border-radius: 12px; line-height: 1.7; }
+.themed-card h2 { margin-bottom: 12px; font-size: 24px; }
+.theme-label { margin-bottom: 14px; font-size: 13px; font-weight: 600; }
+.themed-card--light { color: #253047; background: #fff; border-color: #dce1eb; color-scheme: light; }
+.themed-card--light .theme-label { color: #536ca9; }
+.themed-card--dark { color: #edf0f8; background: #242e42; border-color: #3e4c66; color-scheme: dark; }
+.themed-card--dark .theme-label { color: #b1c7ff; }
+@media (max-width: 600px) {
+  .app { padding: 32px 16px; }
+  .theme-controls { flex-direction: column; align-items: flex-start; }
+  .themed-card { padding: 24px; }
+}
